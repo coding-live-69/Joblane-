@@ -1,0 +1,338 @@
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #222; line-height: 1.6; }
+
+a { text-decoration: none; color: inherit; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 10%; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+.logo-img { height: 40px; }
+
+.nav-links { list-style: none; display: flex; gap: 24px; }
+
+.nav-links li a { font-weight: 600; color: #333; transition: color 0.3s; }
+
+.nav-links li a:hover { color: #007bff; }
+
+.hero { background-color: #ffffff; text-align: center; padding: 80px 20px; }
+
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 20px; }
+
+.hero-text p { font-size: 1.2rem; margin-bottom: 30px; color: #555; }
+
+.btn-primary, .btn-outline { display: inline-block; margin: 8px 10px; padding: 12px 24px; border-radius: 6px; font-weight: 600; transition: all 0.3s ease; }
+
+.btn-primary { background-color: #007bff; color: white; }
+
+.btn-primary:hover { background-color: #0056b3; }
+
+.btn-outline { border: 2px solid #007bff; color: #007bff; background: none; }
+
+.btn-outline:hover { background-color: #007bff; color: white; }
+
+.features { padding: 60px 10%; background-color: #f1f5f9; text-align: center; }
+
+.features h2 { font-size: 2rem; margin-bottom: 40px; }
+
+.feature-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+
+.card { background-color: white; padding: 24px; width: 280px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+
+.card:hover { transform: translateY(-5px); }
+
+.card i { color: #007bff; margin-bottom: 12px; }
+
+.footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; background-color: #fff; border-top: 1px solid #eee; }
+
+.footer a { color: #007bff; }.features { padding: 50px 20px; background-color: #f8f9fa; text-align: center; }
+
+.feature-cards { display: flex; flex-direction: column; gap: 30px; }
+
+@media (min-width: 768px) { .feature-cards { flex-direction: row; justify-content: center; } }
+
+.card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1); max-width: 300px; margin: auto; }
+
+.card img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; } .hero-img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }/* Navbar Container / .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; background-color: #007bff; / JobLane primary blue */ color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+
+/* Logo Styling */ .logo { font-size: 1.8rem; font-weight: 700; color: white; text-decoration: none; }
+
+/* Navigation Links */ .nav-links { list-style: none; display: flex; gap: 20px; }
+
+.nav-links li a { color: white; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 6px; transition: background-color 0.3s ease; }
+
+.nav-links li a:hover, .nav-links li a:focus { background-color: rgba(255, 255, 255, 0.25); }
+
+/* Buttons for Hire & Join */ .btn { padding: 8px 14px; border-radius: 6px; font-weight: 600; cursor: pointer; user-select: none; }
+
+.primary-btn { background-color: #ffc107; color: #212529; }
+
+.primary-btn:hover { background-color: #e0a800; }
+
+.secondary-btn { background-color: transparent; border: 2px solid #ffc107; color: #ffc107; }
+
+.secondary-btn:hover { background-color: #ffc107; color: #212529; }
+
+/* Hamburger Menu - Mobile */ .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+
+.hamburger span { width: 25px; height: 3px; background-color: white; border-radius: 2px; }
+
+/* Responsive */ @media (max-width: 768px) { .nav-links { position: fixed; top: 60px; right: -100%; background-color: #007bff; height: 100vh; width: 200px; flex-direction: column; gap: 30px; padding: 40px 20px; transition: right 0.3s ease; box-shadow: -2px 0 8px rgba(0,0,0,0.2); }
+
+.nav-links.active { right: 0; }
+
+.hamburger { display: flex; } } .logo-img { height: 50px; width: auto; margin-right: 10px; vertical-align: middle; } .page-hero { text-align: center; padding: 60px 20px 30px; background: #f5f7fa; color: #333; }
+
+.hire-form-section { max-width: 600px; margin: auto; padding: 20px; }
+
+.hire-form { display: flex; flex-direction: column; }
+
+.hire-form label { margin-top: 15px; font-weight: 600; }
+
+.hire-form input, .hire-form textarea { padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+
+.hire-form button { margin-top: 20px; padding: 12px; background: #0057ff; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+
+.hire-form button:hover { background: #003ecb; }.logo-img { height: 40px; margin-right: 10px; vertical-align: middle; }
+
+.hire-form label { font-weight: 600; margin-top: 15px; }
+
+.hire-form input, .hire-form textarea { padding: 10px; margin-top: 5px; font-size: 1rem; border-radius: 6px; border: 1px solid #ccc; }
+
+.btn-primary { margin-top: 20px; padding: 12px; background-color: #0057ff; color: white; border: none; border-radius: 6px; cursor: pointer; }
+
+.btn-primary:hover { background-color: #003ecb; } /* White header and navbar */ header, .navbar { background-color: #ffffff; color: #000000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Make sure logo and nav items adjust for white background */ .navbar a, .navbar .btn, .navbar i { color: #000000; }
+
+/* Optional: make buttons outlined on white background */ .navbar .primary-btn { background-color: #0057ff; color: #ffffff; padding: 8px 15px; border-radius: 6px; }
+
+.navbar .secondary-btn { background-color: transparent; border: 2px solid #0057ff; color: #0057ff; padding: 8px 15px; border-radius: 6px; }
+
+/* Logo sizing / .logo-img { height: 40px; vertical-align: middle; margin-right: 10px; } / Primary Navigation Button - Black */ .navbar .primary-btn { background-color: #000000; color: #ffffff; padding: 8px 15px; border-radius: 6px; transition: background-color 0.3s ease; }
+
+.navbar .primary-btn:hover { background-color: #222222; }
+
+/* Secondary Navigation Button - Black Border */ .navbar .secondary-btn { background-color: transparent; color: #000000; border: 2px solid #000000; padding: 8px 15px; border-radius: 6px; transition: all 0.3s ease; }
+
+.navbar .secondary-btn:hover { background-color: #000000; color: #ffffff; } .navbar i { color: #000000; } Fix this code navigation button has become invisible
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Base Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #ffffff;
+  color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-weight: 600;
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Button Styling */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Primary Navigation Button - Black */
+.primary-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #222222;
+}
+
+/* Secondary Navigation Button - Black Outline */
+.secondary-btn {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.secondary-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Icons */
+.navbar i {
+  color: #000000;
+}
+
+/* Responsive Navigation (Hamburger Menu) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 200px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}.search-section {
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.search-section input {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.portfolio-icon {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.portfolio-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+.search-bar {
+  text-align: center;
+  margin: 2rem auto;
+}
+.search-bar input {
+  padding: 0.8rem;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}

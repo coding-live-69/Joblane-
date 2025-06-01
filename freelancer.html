@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join as Freelancer | JobLane</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8b4fc67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ✅ NAVBAR -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/JobLane /img/joblane-logo.png.png" alt="JobLane Logo" class="logo-img">
+    </a>
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+  <li><a href="portfolios.html"><i class="fas fa-briefcase"></i> Portfolios</a></li>
+  <li><a href="hire.html" class="btn primary-btn"><i class="fas fa-user-check"></i> Hire</a></li>
+  <li><a href="join.html" class="btn secondary-btn"><i class="fas fa-user-plus"></i> Join</a></li>
+</ul>
+ </nav>
+</header>
+
+<!-- ✅ HERO SECTION -->
+<section class="page-hero">
+  <h1>Join as a Freelancer</h1>
+  <p>Fill out the form below and get listed on JobLane’s freelance network.</p>
+</section>
+
+<!-- ✅ JOIN FORM -->
+<section class="hire-form-section">
+  <form class="hire-form" action="thankyou.html" method="post">
+    <!-- Personal Info -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+    <label for="whatsapp">WhatsApp Number</label>
+    <input type="tel" id="whatsapp" name="whatsapp" placeholder="+91 9876543210" required>
+
+    <!-- Freelance Details -->
+    <label for="skills">Skills / Services</label>
+    <input type="text" id="skills" name="skills" placeholder="e.g. Logo Design, Video Editing" required>
+
+    <label for="experience">Experience (in years)</label>
+    <input type="number" id="experience" name="experience" placeholder="e.g. 2" min="0" required>
+
+    <label for="portfolio">Portfolio Link</label>
+    <input type="url" id="portfolio" name="portfolio" placeholder="e.g. https://yourportfolio.com">
+
+    <label for="city">Your City</label>
+    <input type="text" id="city" name="city" placeholder="e.g. Delhi, Kolkata" required>
+
+    <!-- ✅ New Rate Field -->
+    <label for="rate">Rate (₹ per project / per hour)</label>
+    <input type="text" id="rate" name="rate" placeholder="e.g. ₹1000/project or ₹200/hour" required>
+
+    <label for="availability">Availability</label>
+    <select id="availability" name="availability" required>
+      <option value="">Select</option>
+      <option value="Full Time">Full Time</option>
+      <option value="Part Time">Part Time</option>
+      <option value="Project Based">Project Based</option>
+    </select>
+
+    <!-- Terms -->
+    <label class="terms-checkbox">
+      <input type="checkbox" required>
+      I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a>
+    </label>
+
+    <!-- Submit -->
+    <button type="submit" class="btn-primary">Submit Application</button>
+  </form>
+</section>
+<!-- ✅ FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 JobLane. All rights reserved.</p>
+  <p><a href="terms.html">Terms & Conditions</a></p>
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+</body>
+</html>

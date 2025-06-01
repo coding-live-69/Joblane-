@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freelancer Portfolios | JobLane</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8b4fc67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ✅ NAVBAR -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/JobLane /img/joblane-logo.png.png" alt="JobLane Logo" class="logo-img">
+    </a>
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+  <li><a href="portfolios.html"><i class="fas fa-briefcase"></i> Portfolios</a></li>
+  <li><a href="hire.html" class="btn primary-btn"><i class="fas fa-user-check"></i> Hire</a></li>
+  <li><a href="join.html" class="btn secondary-btn"><i class="fas fa-user-plus"></i> Join</a></li>
+</ul>
+ </nav>
+</header>
+<!-- ✅ PAGE HERO -->
+<section class="page-hero">
+  <h1>Explore Top Freelancer Portfolios</h1>
+  <p>Each freelancer is identified by a unique code. Talent meets anonymity.</p>
+</section>
+
+<!-- ✅ SEARCH BAR -->
+<section class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search by code or category...">
+</section>
+
+<!-- ✅ PORTFOLIOS GRID -->
+<section class="portfolio-grid" id="portfolioGrid">
+
+  <!-- 🔵 Content Writers -->
+  <div class="portfolio-card" data-code="CW001">
+    <i class="fas fa-pen-fancy portfolio-icon"></i>
+    <h3>Freelancer Code: CW001</h3>
+    <p><strong>Type:</strong> Content Writer</p>
+    <p><strong>Skills:</strong> SEO Articles, Blogs, Product Descriptions</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+  <div class="portfolio-card" data-code="CW002">
+    <i class="fas fa-pen-fancy portfolio-icon"></i>
+    <h3>Freelancer Code: CW002</h3>
+    <p><strong>Type:</strong> Content Writer</p>
+    <p><strong>Skills:</strong> Web Copy, Email Sequences</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+  <!-- 🟠 Graphic Designers -->
+  <div class="portfolio-card" data-code="GD001">
+    <i class="fas fa-paint-brush portfolio-icon"></i>
+    <h3>Freelancer Code: GD001</h3>
+    <p><strong>Type:</strong> Graphic Designer</p>
+    <p><strong>Skills:</strong> Logos, Posters, Branding</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+  <div class="portfolio-card" data-code="GD002">
+    <i class="fas fa-paint-brush portfolio-icon"></i>
+    <h3>Freelancer Code: GD002</h3>
+    <p><strong>Type:</strong> Graphic Designer</p>
+    <p><strong>Skills:</strong> Social Media Creatives</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+  <!-- 🟢 Web/App Designers -->
+  <div class="portfolio-card" data-code="WD001">
+    <i class="fas fa-laptop-code portfolio-icon"></i>
+    <h3>Freelancer Code: WD001</h3>
+    <p><strong>Type:</strong> Web/App Designer</p>
+    <p><strong>Skills:</strong> UI/UX, Responsive Designs</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+  <!-- 🔴 Video Editors -->
+  <div class="portfolio-card" data-code="VE001">
+    <i class="fas fa-video portfolio-icon"></i>
+    <h3>Freelancer Code: VE001</h3>
+    <p><strong>Type:</strong> Video Editor</p>
+    <p><strong>Skills:</strong> Reels, Motion Graphics</p>
+    <a href="#">View Portfolio</a>
+  </div>
+
+</section>
+
+<!-- ✅ FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 JobLane. All rights reserved.</p>
+  <p><a href="terms.html">Terms & Conditions</a></p>
+</footer>
+
+<!-- ✅ SEARCH SCRIPT -->
+<script>
+  const input = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".portfolio-card");
+
+  input.addEventListener("input", function () {
+    const value = this.value.toLowerCase();
+    cards.forEach(card => {
+      const code = card.getAttribute("data-code").toLowerCase();
+      const type = card.querySelector("p").textContent.toLowerCase();
+      card.style.display = (code.includes(value) || type.includes(value)) ? "block" : "none";
+    });
+  });
+</script>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+</body>
+</html>
